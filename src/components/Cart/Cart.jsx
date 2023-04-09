@@ -1,5 +1,5 @@
 import React from 'react';
-import "./cart.css";
+import "./Cart.css";
 
 const Cart = ({ cart, handleRemoveFromCart }) => {
     let message;
@@ -11,7 +11,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
 
     return (
         <div>
-            <h2>Order Summary: {cart.length}</h2>
+            <h2 className={cart.length === 0 ? "red" : "yellow"}>Order Summary: {cart.length}</h2>
             {message}
             {
                 cart.map(tshirt => <p key={tshirt.id}>{tshirt.name}
