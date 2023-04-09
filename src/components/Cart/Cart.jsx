@@ -18,6 +18,10 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
                     <button onClick={() => handleRemoveFromCart(tshirt.id)}>X</button>
                 </p>)
             }
+            {/*logical && operator */}
+            {
+                cart.length === 2 && <p>Double Bonanza!</p>
+            }
         </div>
     );
 };
