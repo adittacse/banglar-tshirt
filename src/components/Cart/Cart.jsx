@@ -22,6 +22,10 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
             {
                 cart.length === 2 && <p>Double Bonanza!</p>
             }
+            {/*logical || operator */}
+            {
+                cart.length !== 3 || <p>Free Shipping</p>
+            }
         </div>
     );
 };
