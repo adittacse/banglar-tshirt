@@ -25,6 +25,10 @@ const router = createBrowserRouter([
             {
                 path: "/grandpa",
                 element: <Grandpa></Grandpa>
+            },
+            {
+                path: "*",
+                element: <h2>404 Not Found</h2>
             }
         ]
     }
